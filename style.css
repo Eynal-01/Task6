@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+:root {
+    --main-color: #8eb50b;
+}
+
+body {
+    background: url("images/back.png");
+    background-size: cover;
+    background-position: top;
+    border: inset;
+    border: #131212k;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'main main main'
+        'main main main'
+        'main main main'
+        'footer footer footer'
+    ;
+}
+
+.item-1 {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: #252525;
+    text-align: center;
+}
+
+.firstgreen {
+    width: 15%;
+    background-color: var(--main-color);
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.logo img {
+    margin-bottom: -1%;
+    margin-right: -2%;
+}
+
+#mainname {
+    color: #f8f8f8;
+    line-height: 72px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: "Sen";
+}
+
+.item-2 {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    text-align: center;
+}
+
+#log {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    font-family: "Sen";
+    text-align: center;
+    transition-property: color;
+    transition-duration: 1s;
+    display: inline-block;
+    position: absolute;
+    right: 90px;
+    top: 43px;
+
+}
+
+#log:hover {
+    transition-property: color;
+    transition-duration: 1s;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#loop {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 43px;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.panel {
+    width: 65%;
+    margin: auto;
+    display: inline-block;
+    padding-top: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.panel li {
+    margin-left: 50px;
+}
+
+.panel a {
+    margin-left: 35%;
+    font-size: 1.2em;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    font-family: "Sen";
+    text-align: center;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.panel a:hover {
+    transition-property: color;
+    transition-duration: 1s;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.panel ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 60%;
+}
+
+#bigword {
+    width: 55%;
+    font-size: 3.93em;
+    line-height: 67px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+    text-align: center;
+    margin: auto;
+    margin-top: 130px;
+}
+
+.yourcity {
+    width: 27%;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.yourcity p {
+    font-size: 3.93em;
+    line-height: 67px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-family: "Sen";
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.locsearch {
+    width: 65%;
+    margin: auto;
+    margin-top: 75px;
+    position: relative;
+}
+
+.location {
+    width: 20%;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+#select {
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: "Sen";
+    margin-left: 20px;
+}
+
+#locimg {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+.search {
+    width: 72%;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+#searchword {
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: "Sen";
+    margin-left: 20px;
+}
+
+#loopblack {
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    bottom: 18px;
+}
+
+#ordernow {
+    background-color: var(--main-color);
+    font-size: 1.2em;
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    font-family: "Sen";
+    color: #f8f8f8;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.quick {
+    width: 30%;
+    margin: auto;
+    position: relative;
+}
+
+#searches {
+    font-size: 3.2em;
+    line-height: 67px;
+    color: #fefbfb;
+    font-weight: 700;
+    font-family: "Sen";
+    text-align: center;
+    margin-top: 100px;
+}
+
+.services {
+    width: 65%;
+    margin: auto;
+    position: relative;
+    margin-top: 52px;
+}
+
+#service1 {
+    width: 13%;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#img1 {
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid #f8f8f8;
+    height: 120px;
+}
+
+#breakfast {
+    margin-top: 18px;
+    font-size: 1.2em;
+    font-family: "Sen";
+    font-weight: bold;
+    color: #f8f8f8
+}
+
+#image {
+    height: 80px;
+    width: 80px;
+}
+
+#image1 {
+    height: 50px;
+    width: 80px;
+    margin-top: -10%;
+    margin-left: 10%
+}
+
+#table {
+    margin-bottom: -50%;
+}
+
+#seemore {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-family: "Sen";
+    color: #f8f8f8;
+    text-transform: uppercase;
+    background-color: #8eb50b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#seemore:hover {
+    transition-property: background-color;
+    transition-duration: 1s;
+    background-color: #ff9800;
+    cursor: pointer
+}
+
+#foodword {
+    font-size: 60px;
+    line-height: 67px;
+    color: #eaebe7;
+    font-weight: 700;
+    font-family: "Sen";
+    text-align: center;
+    margin-top: 110px;
+}
+
+.foodincities {
+    width: 50%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.city1 {
+    width: 70%;
+    position: flex;
+    margin-left: 300px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.imagecity {
+    width: 40%;
+    display: inline-block;
+}
+
+.imagecity img {
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    width: 99%;
+    height: 99%;
+    margin-bottom: -8%;
+}
+
+.titles {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 8%;
+}
+
+.thisweek {
+    font-size: 2.3em;
+    line-height: 80px;
+    color: #eaebe7;
+    font-weight: 700;
+    font-family: "Sen";
+    text-align: left;
+    width: 80%;
+}
+
+#lorem {
+    width: 80%;
+    font-size: 18px;
+    line-height: 25px;
+    color: #eaebe7;
+    font-weight: 400;
+    font-family: "Sen";
+    text-align: left;
+}
+
+.more {
+    background-color: var(--main-color);
+    margin-top: 25px;
+    font-size: 1em;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #f7f6f6;
+    font-family: "Sen";
+    text-align: center;
+    width: 25%;
+}
+
+.item-3 {
+    grid-area: menu;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    margin-top: 160px;
+    background-color: var(--main-color);
+    text-align: center;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.leftmenu {
+    display: inline-block;
+}
+
+.rightmenu {
+    display: inline-block;
+}
+
+
+#get {
+    font-size: 60px;
+    line-height: 50px;
+    color: #18191a;
+    font-weight: 700;
+    font-family: "Sen";
+    margin-top: 5%;
+    text-align: left;
+}
+
+#app {
+    font-size: 60px;
+    line-height: 50px;
+    color: white;
+    font-weight: 700;
+    font-family: "Sen";
+    margin-top: 10px;
+    text-align: left;
+}
+
+#menulorem {
+    width: 663px;
+    height: 109px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Sen";
+    text-align: left;
+    margin-top: 50px;
+}
+
+#play {
+    margin-top: 50px;
+    margin-left: -35%;
+}
+
+.download {
+    background-color: #eaebe7;
+    font-size: 18px;
+    line-height: 30px;
+    color: #1a1919;
+    font-weight: 400;
+    font-family: "Sen";
+    margin-top: 50px;
+    padding: 20px;
+    width: 35%;
+    border-radius: 20px;
+    ;
+}
+
+#iphone {
+    margin-top: 100px;
+    margin-left: 40%;
+    display: inline-block
+}
+
+.text1 {
+    width: 180px;
+    background-color: #f8ffe2;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 60%;
+    right: 18%;
+}
+
+.text2 {
+    width: 180px;
+    background-color: #f8ffe2;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 67%;
+    right: 18%;
+}
+
+.text3 {
+    width: 100px;
+    background-color: #f8ffe2;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 74%;
+    right: 20.3%;
+}
+
+.item-4 {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    margin-top: 120px;
+}
+
+#customers {
+    width: 30%;
+    font-size: 60px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "Sen";
+    margin: auto;
+}
+
+.says {
+    width: 60%;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mark {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 25%
+}
+
+.mark p {
+    font-size: 23px;
+    line-height: 30px;
+    color: #8eb50b;
+    font-weight: 400;
+    font-family: "Sen";
+    text-align: left;
+}
+
+.loremsay {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 17px;
+    line-height: 30px;
+    color: #dfdfdf;
+    font-weight: 400;
+    font-family: "Sen";
+    display: inline-block;
+    text-align: left;
+}
+
+.rows {
+    width: 15%;
+    margin: auto;
+    position: relative;
+    margin-top: 90px;
+}
+
+.rowleft {
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+}
+
+.rowright {
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+}
+
+.touch {
+    width: 60%;
+    background: url("images/back.png") no-repeat;
+    margin: auto;
+    background-color: rgba(0, 255, 0, 0.3);
+    margin-top: 55px;
+    background-color: red;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+#intouch {
+    font-size: 3em;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+    margin-bottom: 20px;
+}
+
+.namesend {
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    text-align: left;
+    padding-left: 50px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #1f1d14;
+    font-weight: 400;
+    font-family: "Sen";
+}
+
+.messagesend {
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    text-align: left;
+    padding-left: 50px;
+    padding: 45px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #1f1d14;
+    font-weight: 400;
+    font-family: "Sen";
+}
+
+.touchsend {
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+    margin-top: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+
+}
+
+.bestfood {
+    margin-top: 100px;
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    text-align: left;
+    padding-left: 50px;
+    padding: 45px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #1f1d14;
+    font-weight: 400;
+    font-family: "Sen";
+    border-radius: 6px;
+    margin-bottom: 60px;
+}
+
+#time {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #131212;
+    font-weight: 700;
+    font-family: "Sen";
+    display: inline-block;
+}
+
+.ordernow1 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+    display: inline-block;
+    padding: 20px;
+    width: 30%;
+    background-color: var(--main-color);
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.item-5 {
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    width: 100%;
+    position: relative;
+}
+
+.half {
+    width: 60%;
+    margin: auto;
+}
+
+.foodf {
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+#main {
+    font-size: 46px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+    margin-top: 50px;
+}
+
+#footerlorem {
+    text-align: left;
+    width: 256px;
+    height: 114px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Sen";
+    margin-top: 30px;
+}
+
+.navigation {
+    display: inline-block;
+    margin-left: 11%;
+    position: absolute;
+    bottom: 1%;
+}
+
+#navi {
+    font-size: 30px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+}
+
+#home {
+    font-size: 17px;
+    line-height: 32px;
+    color: #e4e3e3;
+    font-weight: 400;
+    font-family: "Sen";
+    margin-top: 10px;
+}
+
+.contact {
+    display: inline-block;
+    margin-left: 28%;
+    position: absolute;
+    bottom: 3%;
+}
+
+#con {
+    font-size: 30px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Sen";
+}
+
+#offi {
+    height: 40px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #8eb50b;
+    font-weight: 400;
+    font-family: "Sen";
+    margin-top: 20px;
+}
+
+.copyright {
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    opacity: 0.812;
+    font-size: 17px;
+    line-height: 32px;
+    color: #fefefd;
+    font-weight: 400;
+    font-family: "Sen";
+    position: absolute;
+    bottom: 0;
+    margin-top:10px;
+background-color: var(--main-color);
+
+}
